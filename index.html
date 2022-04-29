@@ -15,8 +15,20 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2035194427237290"
-     crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/LazerPay-Finance/checkout-build@main/checkout%401.0.1/dist/index.js"></script>
+    <script>
+      document.querySelector(".paynow").addEventListener("click", () => {
+        LazerCheckout({
+          email: "",
+          name: "Send",
+          amount: "50",
+          currency: "USD",
+          logo: "",
+          key: "pk_live_PWDB3EPpWylgFa2ma6g4iXhd7gcxlPDdK3KVlKVpLogrYEZYYj}",
+          paymentButtonId: "63338568-d034-4b34-8a1e-350b854fe0da"
+        });
+      });
+    </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -54,6 +66,28 @@
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">Web Developer - Mobile App Developer - Graphic Designer - Ethical Hacker - Game Developer</p>
             </div>
+                <button
+      class="paynow"
+      type="button"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 222.46px;
+        height: 50px;
+        padding: 15px 36px;
+        background: #003585;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+      "
+    >
+      <img
+        style="object-fit: cover"
+        src="https://i.ibb.co/wyTzckd/lazerpay.png"
+        alt="checkout button"
+      />
+    </button>
         </header>
         </section>
         <!-- Portfolio Section-->
